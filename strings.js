@@ -3,6 +3,8 @@
 // 	Ouput :: "Position of alphabet: 1"
 	function characPosit(character){
 		//your code is here
+		var code = character.toLowerCase().charCodeAt(0)
+		return "Position of alphabet: " + (code - 96);
 	}
 
 // Write a function called repeatStr which repeats the given
@@ -11,4 +13,9 @@
 	
 	function repeatStr (n, s) {
 		//your code is here
+		var result = ""
+		for(var i = 0; i < s; i++){
+			result+= n;
+		}
+		return result;
 	}
