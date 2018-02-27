@@ -6,4 +6,20 @@
 
     function accum(input){
         //your code is here
+        var result = ""
+        for(var i = 0 ; i < input.length ; i++){
+        	for(var j = 0 ; j <= i ; j++){
+        		if (j === 0){
+        			result += input[i].toUpperCase();
+        		}
+        		else {
+        			result += input[i].toLowerCase();
+        		}
+        	}
+        	if (i === input.length - 1){
+        		return result;
+        	}
+        	result += "-"
+        }
+        return result ;
     }
